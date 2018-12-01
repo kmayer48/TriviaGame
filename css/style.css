@@ -30,7 +30,7 @@ button {
         max-width: 150px;
     }
 
-    #startBtn{
+    .btn{
         font-size: 8pt;
     }
 }
