@@ -27,7 +27,7 @@ button {
 @media screen and (max-width: 640px){
 
     .gif{
-        max-width: 240px;
+        max-width: 150px;
     }
 
     #startBtn{
