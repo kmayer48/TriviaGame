@@ -1,0 +1,77 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dog Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
+</head>
+<body>
+    <div class="jumbotron my-5 mx-auto" id="info">
+        <div id="questionHead">
+        <h1 class="display-4 text-center" id="title">Dog Trivia Game! <i class="fas fa-paw"></i></h1>
+        <p class="lead text-center" id="timeLeft">Time Left: <span id="timer"></span></p>
+        <p class="lead text-center" id="unasweredQuestions">Questions Left: <span id="questionsLeft"></span></p>
+        <hr class=" mb-4">
+        <div class="col-12 mt-5 text-center">
+            <button type="button" class="btn btn-primary" id="startBtn">Start the Quiz!</button>
+        </div>  
+        </div>
+        <div id="main-question">
+        <!-- Question Section -->
+        <p class="lead text-center" id="question"></p>
+        <!-- Answer Section -->
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-6 mt-4">
+                <button type="button" class="btn btn-dark" id="option0"></button>
+            </div>  
+            <div class="col-xs-12 col-md-6 mt-4">
+                <button type="button" class="btn btn-dark" id="option1"></button>
+            </div>
+        </div>
+        <div class="row mt-3 text-center">
+            <div class="col-xs-12 col-md-6 mt-4">
+                <button type="button" class="btn btn-dark" id="option2"></button>
+            </div>  
+            <div class="col-xs-12 col-md-6 mt-4">
+                <button type="button" class="btn btn-dark" id="option3"></button>
+            </div>
+        </div>
+        </div>
+        <div class="text-center answer">
+            <h1 class="text-center" id="answer"></h1>
+            <br>
+            <iframe class="gif" id="gif0" src="https://giphy.com/embed/oDLDbBgf0dkis" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe class="gif" id="gif1" src="https://giphy.com/embed/rxOema2dETPiM" width="480" height="252" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe class="gif" id="gif2" src="https://giphy.com/embed/11fXZK19KTAAla" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe class="gif" id="gif3" src="https://giphy.com/embed/l35qrL8kZtNKM" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe class="gif" id="gif4" src="https://giphy.com/embed/wW95fEq09hOI8" width="480" height="343" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe class="gif" id="gif5" src="https://giphy.com/embed/l3q2Oslf2f8NzPDyM" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe class="gif" id="gif6" src="https://giphy.com/embed/naS93ZG3DUhuE" width="361" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe class="gif" id="gif7" src="https://giphy.com/embed/NmGbJwLl7Y4lG" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe class="gif" id="gif8" src="https://giphy.com/embed/eYM0ad6oiKioU" width="480" height="326" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe class="gif" id="gif9" src="https://giphy.com/embed/c9QYMdmcCRGh2" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <br>
+        <div class="answer">
+            <h1 class="text-center" id="correctAnswer"></h1>
+        </div>
+        <div class="scoreboard text-center">
+            <h1 id="finished"></h1>
+            <br>
+            <h3 id="correct"></h3>
+            <h3 id="incorrect"></h3>
+            <h3 id="unaswered"></h3>
+        </div>
+        <div class="col-12 mt-5 text-center">
+            <button type="button" class="btn btn-primary" id="restartBtn">Try Again!</button>
+        </div>
+        </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="javascript/app.js"></script>
+</html>

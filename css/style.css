@@ -1,0 +1,36 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: none;
+}
+
+.jumbotron {
+    width: 75%;
+    background-color: rgba(255,255,255,0.75); 
+    font-family: 'Unlock', cursive;  
+}
+
+button {
+    width: 50%;
+    height: 10%
+}
+
+#startBtn{
+    height: 100px;
+    margin-top: 75px;
+}
+
+.gif{
+    display: none;
+}
+
+@media screen and (max-width: 640px){
+
+    .gif{
+        max-width: 240px;
+    }
+
+    #startBtn{
+        font-size: 8pt;
+    }
+}
